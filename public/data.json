@@ -1,0 +1,42 @@
+[
+  {
+    "id": "6150723be8013c8185ceac6e",
+    "name": "Learn To Play Piano in 30 Days",
+    "description": "Learning with flowkey is easy and fun. Practice notes and chords interactively and receive instant feedback. All you need is the flowkey app and your piano or keyboard.",
+    "img": "https://i.ibb.co/HrDcw1M/Frame-1.jpg"
+  },
+  {
+    "id": "6150723be50ef9b20b7c749a",
+    "name": "Rock Dj Jamming",
+    "description": "Phrasing Is So Important When Mixing! In this DJ tutorial taken Beginner DJ Course you will learn how to layer songs together in phrase. This instantly improves any transition as the two songs change together. ",
+    "img": "https://i.ibb.co/qpQg2Zs/Frame-2.jpg"
+
+  },
+  {
+    "id": "6150723bc9c7e63bc6fa2de4",
+    "name": "Guiter Tutorial for Beginner",
+    "description": "Open chords are one of the first skills a beginner guitarist will learn. Master just three, and you can play a whole host of popular songs. Aside from attending guitar lessons, following a chord chart is one of the best ways to get acquainted with the basics.",
+    "img": "https://i.ibb.co/0KDPLxX/Frame-3.jpg"
+
+  },
+  {
+    "id": "6150723b0c16f085adfe8312",
+    "name": "Music Recording",
+    "description": "Technicians deal with controlling and changing the different sounds (audio signals) by altering volume, pitch, sound effects, and equalization. Equalization deals with modifying sound frequencies to fit the need – think treble and bass.",
+    "img": "https://i.ibb.co/qC12z1q/Frame-4.jpg"
+
+  },
+  {
+    "id": "6150723b850b77789ccbbdce",
+    "name": "Learn to Sing",
+    "description": "singing lends itself perfectly to self-teaching. You can learn to listen to your own voice and correct the notes that are out of key, adjust your vocal cords and your vocal timbre, master breathing",
+    "img": "https://i.ibb.co/NVhpS5s/Frame-5.jpg"
+
+  },
+  {
+    "id": "6150723bac177516dc007c51",
+    "name": "Acoustic guitars Hands On",
+    "description": "Acoustic guitars are usually the weapon of choice for most beginner guitarists. They're the most balanced guitar type in terms of sound, playability, and they require the least amount of time in order to grasp the basic concept of playing",
+    "img": "https://i.ibb.co/PrrSr7P/Frame-6.jpg"
+  }
+]

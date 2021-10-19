@@ -1,0 +1,23 @@
+h1 {
+  background: linear-gradient(115.78deg, #1323b3 0%, #0d72d1 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-top: 6rem;
+}
+
+p {
+  padding-bottom: 3rem;
+  color: #313131;
+}
+
+.btnHero {
+  background: linear-gradient(115.78deg, #01cac6 0%, #027cd1 100%);
+  border-radius: 28px;
+  color: #e6e6e6;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 15px 40px 15px 40px;
+  text-decoration: none;
+  outline: none;
+  border: none;
+}

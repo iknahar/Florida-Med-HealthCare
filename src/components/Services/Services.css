@@ -1,0 +1,40 @@
+.cardHolder {
+  background-color: #edeaff;
+  padding: 15px;
+}
+
+.card-body {
+  color: rgb(255, 255, 255);
+  box-shadow: 8px 7px 21px -5px #003c8a;
+
+}
+
+
+.cardStyle {
+  width: 24rem;
+  height: 26rem;
+  margin: 6px;
+  overflow: hidden;
+}
+
+.description {
+  font-size: 14px;
+  height: 4rem;
+  overflow: hidden;
+}
+
+.btnSvc {
+  background:  #027cd1;
+  border-radius: 28px;
+  color: #e6e6e6;
+  font-size: 14px;
+  padding: 8px 20px 8px 20px;
+  text-decoration: none;
+  outline: none;
+  border: none;
+}
+
+.btnSvc:hover {
+  background:  #01cac6;
+  color: #e6e6e6;
+}
