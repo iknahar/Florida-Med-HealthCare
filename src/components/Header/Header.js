@@ -34,13 +34,13 @@ const Header = () => {
               <NavLink style={navStyle} activeStyle={activeSty} to="/donate">
                 Donate Us
               </NavLink>
+             
+                <NavLink style={navStyle} activeStyle={activeSty} to="/signup">
+                  Log In or Register
+                </NavLink>
 
-              <NavLink style={navStyle} activeStyle={activeSty} to="/signup">
-                Log In or Register
-              </NavLink>
-              
               <span>{user?.displayName} </span>
-              {user?.email && <button onClick={logout}>log out</button>}
+              {user?.displayName && <button onClick={logout}>log out</button>}
             </Nav>
           </Navbar.Collapse>
         </Container>

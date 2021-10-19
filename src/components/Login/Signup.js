@@ -55,7 +55,6 @@ function Signup() {
       registerNewUser(email, password);
       }
 
-      alert(`Welcome ${name}`)
   };
 
   const processLogin = (email, password) => {
