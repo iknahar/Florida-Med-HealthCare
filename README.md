@@ -1,10 +1,13 @@
-# Getting Started with Create React App
+# Florida Med Center
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is about a medical center who provides all kind of health care solutions.
 
-## Available Scripts
+Live Link : https://florida-med.netlify.app/
 
-In the project directory, you can run:
-
-### `npm start`
-
+## Technology Stack
+- HTML
+- CSS
+- JS
+- React.js
+- React Bootstrap
+- Router

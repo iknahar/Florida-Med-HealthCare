@@ -18,7 +18,7 @@ const Header = () => {
     <div className="header d-flex align-items-center bg-white p-3 justify-content-between px-5">
       <Navbar expand="lg">
         <Container>
-          <Navbar.Brand href="/home">Florida Medi Center</Navbar.Brand>
+          <Navbar.Brand to="/home">Florida Medi Center</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="topnavbar me-auto">
@@ -38,12 +38,7 @@ const Header = () => {
               <NavLink style={navStyle} activeStyle={activeSty} to="/signup">
                 Log In or Register
               </NavLink>
-              {/* <NavLink style={navStyle} activeStyle={activeSty} to="/register">
-                Register
-              </NavLink>
-              <NavLink style={navStyle} activeStyle={activeSty} to="/login">
-                Login
-              </NavLink> */}
+              
               <span>{user?.displayName} </span>
               {user?.email && <button onClick={logout}>log out</button>}
             </Nav>
