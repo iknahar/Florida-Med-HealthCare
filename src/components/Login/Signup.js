@@ -22,7 +22,7 @@ function Signup() {
   const [isLogin, setIsLogin] = useState(false);
 
   const auth = getAuth();
-  
+
   const handleGoogleSignIn = () => {
     signInWithPopup(auth, googleProvider).then((result) => {
       const user = result.user;

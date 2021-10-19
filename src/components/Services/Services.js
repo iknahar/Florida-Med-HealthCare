@@ -29,7 +29,9 @@ const Services = () => {
                     {service.name}
                   </h5>
                   <p className="card-text description">{service.description}</p>
-                  <Link className="pt-2 btnSvc">See Details</Link>
+                  <Link to={`/details/${service.id}`} className="pt-2 btnSvc">
+                    See Details
+                  </Link>
                 </div>
               </div>
             </div>
