@@ -1,83 +1,188 @@
-import React, { useState } from "react";
-import "./Login.css";
 import {
   getAuth,
+  signInWithPopup,
+  GoogleAuthProvider,
   createUserWithEmailAndPassword,
+  signInWithEmailAndPassword,
   sendEmailVerification,
+  updateProfile,
 } from "firebase/auth";
+import { useState } from "react";
 import firebaseInitialization from "../../firebase/firebase.init";
 
-firebaseInitialization()
 
-const Signup = () => {
-  const auth = getAuth();
+firebaseInitialization()
+const googleProvider = new GoogleAuthProvider();
+
+function Signup() {
+  const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
+  const [isLogin, setIsLogin] = useState(false);
 
-  const handleEmailChange = (e) => {
-    setEmail(e.target.value);
-  };
-  const handlePasswordChange = (e) => {
-    if (e.target.value.length < 6) {
-      console.error("password must need to be at least 6 characters");
-      return;
-    } else {
-      setPassword(e.target.value);
-    }
-  };
+  const auth = getAuth();
 
-  const handleOnSubmit = (e) => {
-    e.preventDefault();
-    console.log(email, password);
-    createUserWithEmailAndPassword(auth, email, password)
-      .then((result) => {
-        console.log(result.user);
-        verifyEmail();
-      })
-      .catch((error) => console.log(error.message));
-  };
-
-  const verifyEmail = () => {
-    sendEmailVerification(auth.currentUser).then(() => {
-      // Email verification sent!
-      // ...
+  const handleGoogleSignIn = () => {
+    signInWithPopup(auth, googleProvider).then((result) => {
+      const user = result.user;
+      console.log(user);
     });
   };
 
+  const toggleLogin = (e) => {
+    setIsLogin(e.target.checked);
+  };
+
+  const handleNameChange = (e) => {
+    setName(e.target.value);
+  };
+  const handleEmailChange = (e) => {
+    setEmail(e.target.value);
+  };
+
+  const handlePasswordChange = (e) => {
+    setPassword(e.target.value);
+  };
+
+  const handleRegistration = (e) => {
+    e.preventDefault();
+    console.log(email, password);
+    if (password.length < 6) {
+      setError("Password Must be at least 6 characters long.");
+      return;
+    }
+    if (!/(?=.*[A-Z].*[A-Z])/.test(password)) {
+      setError("Password Must contain 2 upper case");
+      return;
+    }
+
+    if (isLogin) {
+      processLogin(email, password);
+    } else {
+      registerNewUser(email, password);
+    }
+  };
+
+  const processLogin = (email, password) => {
+    signInWithEmailAndPassword(auth, email, password)
+      .then((result) => {
+        const user = result.user;
+        console.log(user);
+        setError("");
+      })
+      .catch((error) => {
+        setError(error.message);
+      });
+  };
+
+  const registerNewUser = (email, password) => {
+    createUserWithEmailAndPassword(auth, email, password)
+      .then((result) => {
+        const user = result.user;
+        console.log(user);
+        setError("");
+        verifyEmail();
+        setUserName();
+      })
+      .catch((error) => {
+        setError(error.message);
+      });
+  };
+
+  const setUserName = () => {
+    updateProfile(auth.currentUser, { displayName: name }).then((result) => {});
+  };
+
+  const verifyEmail = () => {
+    sendEmailVerification(auth.currentUser).then((result) => {
+      console.log(result);
+    });
+  };
+
+
+
   return (
-    <div>
-      <div className="login-box d-flex align-items-center justify-content-center">
-        <div className="login">
-          <div className="login-box">
-            <h2 className="">Pease Register</h2>
-            <form onSubmit={handleOnSubmit}>
+    <div className="mx-auto w-50 mt-3">
+      <form onSubmit={handleRegistration}>
+        <h3 className="text-primary mb-5">
+          Please {isLogin ? "Login" : "Register"}
+        </h3>
+        {!isLogin && (
+          <div className="row mb-3">
+            <label htmlFor="inputName" className="col-sm-2 col-form-label">
+              Name
+            </label>
+            <div className="col-sm-10">
               <input
-                onChange={handleEmailChange}
-                className="input-felid"
-                type="email"
-                name="email"
-                placeholder="Enter your Email"
+                type="text"
+                onBlur={handleNameChange}
+                className="form-control"
+                id="inputName"
+                placeholder="Your Name"
               />
-              <br />
-              <input
-                onChange={handlePasswordChange}
-                className="input-felid"
-                type="password"
-                name="password"
-                placeholder="Enter your Password"
-              />
-              <input
-                className="mt-3 w-50 btn btnHero m-auto"
-                type="submit"
-                value="Register"
-              />
-            </form>
+            </div>
+          </div>
+        )}
+        <div className="row mb-3">
+          <label htmlFor="inputEmail3" className="col-sm-2 col-form-label">
+            Email
+          </label>
+          <div className="col-sm-10">
+            <input
+              onBlur={handleEmailChange}
+              type="email"
+              className="form-control"
+              id="inputEmail3"
+              required
+            />
           </div>
         </div>
-      </div>
+        <div className="row mb-3">
+          <label htmlFor="inputPassword3" className="col-sm-2 col-form-label">
+            Password
+          </label>
+          <div className="col-sm-10">
+            <input
+              type="password"
+              onBlur={handlePasswordChange}
+              className="form-control"
+              id="inputPassword3"
+              required
+            />
+          </div>
+        </div>
+        <div className="row mb-3">
+          <div className="col-sm-10 offset-sm-2">
+            <div className="form-check">
+              <input
+                onChange={toggleLogin}
+                className="form-check-input"
+                type="checkbox"
+                id="gridCheck1"
+              />
+              <label className="form-check-label" htmlFor="gridCheck1">
+                Already Registered?
+              </label>
+            </div>
+          </div>
+        </div>
+        <div className="row mb-3 text-danger">{error}</div>
+        <button type="submit" className="btnHero">
+          {isLogin ? "Login" : "Register"}
+        </button>
+      </form>
+      <br />
+      <div>--------------------------------</div>
+      <br />
+      <button
+        className="pt-2 pb-2 ps-5 pe-5 mb-5 rounded-pill"
+        onClick={handleGoogleSignIn}
+      >
+        Google Sign In
+      </button>
     </div>
   );
-};
+}
 
 export default Signup;

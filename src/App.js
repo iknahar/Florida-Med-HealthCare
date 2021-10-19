@@ -38,9 +38,9 @@ function App() {
             <Book></Book>
           </Route>
 
-          <Route path="/login">
+          {/* <Route path="/login">
             <Login></Login>
-          </Route>
+          </Route> */}
 
           <Route path="/signup">
             <Signup></Signup>

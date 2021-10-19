@@ -32,11 +32,9 @@ const Header = () => {
               <NavLink style={navStyle} activeStyle={activeSty} to="/donate">
                 Donate Us
               </NavLink>
-              <NavLink style={navStyle} activeStyle={activeSty} to="/login">
-                Login
-              </NavLink>
+
               <NavLink style={navStyle} activeStyle={activeSty} to="/signup">
-                Sign Up
+                Log In or Register
               </NavLink>
             </Nav>
           </Navbar.Collapse>
