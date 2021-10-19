@@ -1,5 +1,6 @@
 import React from 'react';
 import donate from '../../asset/img/donate.jpg'
+import "./Donate.css";
 
 const Donate = () => {
 
@@ -9,22 +10,17 @@ const Donate = () => {
         <hr className="text-center text-white w-75 mx-auto" />
 
         <div className="d-flex justify-content-around align-items-center">
-          <div>
+          <div className="donateImg">
             <img src={donate} alt="" />
           </div>
 
-          <div className="w-50 ps-5">
+          <div className="w-50 ps-5 donateText">
             <h2>Donate Us</h2>
             <p>
               Help us to stay with needy and helpless people. Share a part of
               your happiness to me.
             </p>
-            <input
-              type="number"
-              className="p-2"
-              id="number"
-              min="1"
-            />
+            <input type="number" className="p-2" id="number" min="1" />
             <br />
             <button
               className="btnHero mt-4"

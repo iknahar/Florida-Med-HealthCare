@@ -9,7 +9,7 @@ import {
 } from "firebase/auth";
 import { useState } from "react";
 import firebaseInitialization from "../../firebase/firebase.init";
-
+import './Signup.css'
 
 firebaseInitialization()
 const googleProvider = new GoogleAuthProvider();
@@ -96,7 +96,7 @@ function Signup() {
 
 
   return (
-    <div className="mx-auto w-50 mt-3">
+    <div className="mx-auto w-50 mt-3 signupForm">
       <form onSubmit={handleRegistration}>
         <h3 className="text-primary mb-5">
           Please {isLogin ? "Login" : "Register"}

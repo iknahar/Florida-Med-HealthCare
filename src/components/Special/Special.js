@@ -1,6 +1,6 @@
 import React from 'react';
 import special from '../../asset/img/special.png'
-
+import "./Special.css";
 const Special = () => {
     return (
       <div className="pb-5">
@@ -8,9 +8,9 @@ const Special = () => {
         <hr className="text-center text-white w-75 mx-auto" />
         <div className="d-flex justify-content-evenly">
           <div>
-            <img className="p-5" src={special} alt="" />
+            <img className="p-5 specialImg" src={special} alt="" />
           </div>
-          <div className="w-50">
+          <div className="w-50 specialText">
             <h1>Covid 19 Vaccine</h1>
             <h2> Delivery Service</h2>
             <p className="pt-3">

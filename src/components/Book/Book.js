@@ -9,11 +9,11 @@ const Book = () => {
       <hr className="text-center text-white w-75 mx-auto" />
 
       <div className="d-flex justify-content-around align-items-center">
-        <div>
+        <div className="bookappointmentImage">
           <img src={book} alt="" />
         </div>
 
-        <div className="w-50 ps-5">
+        <div className="w-50 ps-5 bookText">
           <h2>Book</h2>
           <h2>Appointment</h2>
           <p className="">

@@ -10,7 +10,7 @@ const Services = () => {
       .then((res) => res.json())
       .then((data) => setServices(data));
   }, []);
-
+const [services] = useServices();
   return (
     <div className="cardHolder">
       <h2 className="text-center text-primary">Our Services</h2>

@@ -1,11 +1,5 @@
-#datetime-local {
-  padding: 15px;
-}
-
-
-
 @media (max-width: 768px){
-     .bookappointmentImage{
+     .donateImg{
       display: none;
 
   }
@@ -13,12 +7,12 @@
 }
 
 @media (max-width: 1024px){
-     .bookappointmentImage{
+     .donateImg{
       width: 50vw
 
   }
 
-  .bookText{
+  .donateText{
      width: 50vw
   }
 

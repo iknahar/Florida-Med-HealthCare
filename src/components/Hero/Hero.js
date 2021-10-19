@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Bg from "../../asset/img/bgt-1.jpg";
+import "./Hero.css";
 
 const Hero = () => {
   return (
@@ -13,7 +14,7 @@ const Hero = () => {
         backgroundSize: "cover",
       }}
     >
-      <div className="heroText w-50">
+      <div className="heroText">
         <h1 className=" fw-bold ps-5 text-secondary">
           Get convenience for your health facilities.
         </h1>
