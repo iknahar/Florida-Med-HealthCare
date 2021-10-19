@@ -18,7 +18,7 @@ const Header = () => {
         <Container>
           <Navbar.Brand href="/home">Florida Medi Center</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav" >
+          <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="topnavbar me-auto">
               <NavLink style={navStyle} activeStyle={activeSty} to="/home">
                 Home

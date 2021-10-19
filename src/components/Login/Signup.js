@@ -22,7 +22,7 @@ function Signup() {
   const [isLogin, setIsLogin] = useState(false);
 
   const auth = getAuth();
-
+  
   const handleGoogleSignIn = () => {
     signInWithPopup(auth, googleProvider).then((result) => {
       const user = result.user;
@@ -48,20 +48,14 @@ function Signup() {
   const handleRegistration = (e) => {
     e.preventDefault();
     console.log(email, password);
-    if (password.length < 6) {
-      setError("Password Must be at least 6 characters long.");
-      return;
-    }
-    if (!/(?=.*[A-Z].*[A-Z])/.test(password)) {
-      setError("Password Must contain 2 upper case");
-      return;
-    }
 
     if (isLogin) {
       processLogin(email, password);
     } else {
       registerNewUser(email, password);
-    }
+      }
+
+      alert(`Welcome ${name}`)
   };
 
   const processLogin = (email, password) => {

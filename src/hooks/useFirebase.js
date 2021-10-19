@@ -6,9 +6,9 @@ import {
   onAuthStateChanged,
   signOut,
 } from "firebase/auth";
-import initializeAuthentication from "../Firebase/firebase.init";
+import firebaseInitialization from "../firebase/firebase.init";
 
-initializeAuthentication();
+firebaseInitialization();
 
 const useFirebase = () => {
   const [user, setUser] = useState({});
@@ -42,7 +42,7 @@ const useFirebase = () => {
       setLoading(false);
     });
     return () => unsubscribe;
-  }, []);
+  }, [auth]);
 
   return {
     user,
