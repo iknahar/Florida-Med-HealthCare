@@ -5,7 +5,7 @@
 
 .card-body {
   color: rgb(255, 255, 255);
-  box-shadow: 8px 7px 21px -5px #003c8a;
+  box-shadow: 8px 7px 21px -5px #e7f1ff;
 
 }
 
@@ -32,6 +32,7 @@
   text-decoration: none;
   outline: none;
   border: none;
+  text-align: center;
 }
 
 .btnSvc:hover {

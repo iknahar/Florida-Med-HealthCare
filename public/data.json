@@ -1,40 +1,40 @@
 [
   {
-    "id": "6150723be8013c8185ceac6e",
+    "id": "0",
     "name": "Blood Count",
     "description": "Blood count, laboratory test that determines the number of red blood cells (erythrocytes) and white blood cells (leukocytes) in a given volume of blood. The readings vary with sex, age, physiological state, and general health, but the blood of a normal individual contains on average 5,000,000 red cells and 7,000 white cells per cubic millimetre. A differential blood count is the percentage of each type of white blood cell per 100 white cells counted; the white cells of a normal adult are about 55 percent neutrophils, 30 percent lymphocytes, and small percentages of eosinophils, basophils.",
     "img": "https://i.ibb.co/HrDcw1M/Frame-1.jpg"
   },
   {
-    "id": "6150723be50ef9b20b7c749a",
+    "id": "1",
     "name": "Glucose tolerance test",
     "description": "Glucose tolerance test, procedure to assess the ability of the body to metabolize glucose, the principal type of sugar found in the blood. In persons with normal or slightly elevated blood-sugar levels, the body tolerance to sugar is measured in a stressful situation induced by administering a large amount of glucose. The most common procedure is to take an initial blood sample from a fasting individual, have the individual empty his or her bladder, and then administer orally 50–100 grams of glucose (usually 1 gram of glucose per kilogram of ideal body weight) dissolved in water. Samples of blood and urine for glucose determination are obtained 30 minutes, 1 hour, 2 hours, and 3 hours later. Normally the concentration of glucose in the blood will rise to about 140 mg/100 ml within 45–60 minutes and will return in 1 1/2–2 1/2 hours to the normal range of 80–120 mg/100 ml. The most valuable diagnostic point is 2 hours, when the value should be less than 120 mg/100 ml.",
     "img": "https://i.ibb.co/qpQg2Zs/Frame-2.jpg"
 
   },
   {
-    "id": "6150723bc9c7e63bc6fa2de4",
+    "id": "2",
     "name": "Immunologic blood test",
     "description": "Immunologic blood test, any of a group of diagnostic analyses of blood that employ antigens (foreign proteins) and antibodies (immunoglobulins) to detect abnormalities of the immune system. Immunity to disease depends on the body’s ability to produce antibodies when challenged by antigens. Antibodies bind to and help eliminate antigens from the body. The inability of the body to produce certain classes of immunoglobulins (IgG, IgA, IgM, IgD, IgE) can lead to disease. Complexes formed by the antigen-antibody reaction can be deposited in almost any tissue and can lead to malfunction of that organ. Immunofluorescence assays to detect antinuclear antibodies",
     "img": "https://i.ibb.co/0KDPLxX/Frame-3.jpg"
 
   },
   {
-    "id": "6150723b0c16f085adfe8312",
+    "id": "3",
     "name": "Inulin clearance",
     "description": "Inulin clearance, procedure by which the filtering capacity of the glomeruli (the main filtering structures of the kidney) is determined by measuring the rate at which inulin, the test substance, is cleared from blood plasma. Inulin is the most accurate substance to measure because it is a small, inert polysaccharide molecule that readily passes through the glomeruli into the urine without being reabsorbed by the renal tubules. The steps involved in this measurement, however, are quite involved; consequently, inulin is seldom used in clinical testing, although it is used in research. Creatinine clearance (q.v.) is the more common procedure used to assess renal function.",
     "img": "https://i.ibb.co/qC12z1q/Frame-4.jpg"
 
   },
   {
-    "id": "6150723b850b77789ccbbdce",
+    "id": "4",
     "name": "Serological test",
     "description": "Serological test, also called serology test or antibody test, any of several laboratory procedures carried out on a sample of blood serum (the clear liquid that separates from the blood when it is allowed to clot) for the purpose of detecting antibodies or antibody-like substances that appear specifically in association with certain diseases. There are different types of serological tests—for example, flocculation tests, neutralization tests, hemagglutinin-inhibition tests, enzyme-linked immunosorbent assays (ELISAs), and chemiluminescence immunoassays. Among flocculation tests, complement-fixation tests are the most common. These are based on the precipitation, or flocculation, that takes place when an antibody and specially prepared",
     "img": "https://i.ibb.co/NVhpS5s/Frame-5.jpg"
 
   },
   {
-    "id": "6150723bac177516dc007c51",
+    "id": "5",
     "name": "Syphilis test",
     "description": "Syphilis test, any of several laboratory procedures for the detection of syphilis. The most commonly used tests are carried out on a sample of blood serum (serological tests for syphilis, or STS). Serological tests are divided into two types: nontreponemal and treponemal. Nontreponemal tests include the rapid plasma reagin (RPR) test and the Venereal Disease Research Laboratory (VDRL) test, both of which are based on the detection in the blood of syphilis reagin (a type of serum antibody). Treponemal tests include the Treponema pallidum hemagglutination assay (TPHA; or T. pallidum particle agglutination assay, TPPA); the enzyme immunoassay (EIA)",
     "img": "https://i.ibb.co/PrrSr7P/Frame-6.jpg"

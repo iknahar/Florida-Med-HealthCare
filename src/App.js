@@ -10,8 +10,8 @@ import Error from "./components/Error/Error";
 import firebaseInitialization from "./firebase/firebase.init";
 import PrivateRoute from "./components/PrivateRoute/PrivateRoute";
 import Signup from './components/Login/Signup'
-import Details from "./components/Details/Details";
 import AuthProvider from "./context/AuthProvider";
+import Details from "./components/Details/Details";
 
 firebaseInitialization();
 
@@ -29,7 +29,7 @@ function App() {
             <Route path="/home">
               <Home></Home>
             </Route>
-            <Route path="/services">
+            <Route exact path="/services">
               <Services></Services>
             </Route>
 
@@ -40,12 +40,12 @@ function App() {
             <PrivateRoute path="/book">
               <Book></Book>
             </PrivateRoute>
-          
+
             <Route path="/signup">
               <Signup></Signup>
             </Route>
 
-            <Route path="/details/:serviceId">
+            <Route path="/services/:id">
               <Details></Details>
             </Route>
 

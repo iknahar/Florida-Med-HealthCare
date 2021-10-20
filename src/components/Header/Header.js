@@ -13,7 +13,9 @@ const Header = () => {
     color: "#0182CF",
     fontWeight: "bold",
   };
-   const { user, logout } = useAuth();
+
+  const { user, logout } = useAuth();
+  
   return (
     <div className="header d-flex align-items-center bg-white p-3 justify-content-between px-5">
       <Navbar expand="lg">
@@ -34,7 +36,7 @@ const Header = () => {
               <NavLink style={navStyle} activeStyle={activeSty} to="/donate">
                 Donate Us
               </NavLink>
-             
+
                 <NavLink style={navStyle} activeStyle={activeSty} to="/signup">
                   Log In or Register
                 </NavLink>
