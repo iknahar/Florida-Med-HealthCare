@@ -3,9 +3,8 @@ import { Route, Redirect } from "react-router-dom";
 import useAuth from "./../../hooks/useAuth";
 
 const PrivateRoute = ({ children, ...rest }) => {
-
   const { user } = useAuth();
-  console.log(user);
+
   return (
     <Route
       {...rest}
@@ -21,9 +20,8 @@ const PrivateRoute = ({ children, ...rest }) => {
           ></Redirect>
         )
       }
-    >
+    ></Route>
 
-    </Route>
   );
 };
 

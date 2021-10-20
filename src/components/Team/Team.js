@@ -10,7 +10,7 @@ const Team = () => {
   }, []);
 
   return (
-    <div className="cardHolder bg-light">
+    <div className="cardHolder bg-white">
       <h2 className="text-center text-primary">Our Team</h2>
       <hr className="text-center text-white w-75 mx-auto" />
       <div className="d-flex flex-wrap justify-content-around ">

@@ -1,3 +1,7 @@
+.serviceSection{
+   background-color: #DCEAEB;
+}
+
 .cardHolder {
   background-color: #edeaff;
   padding: 15px;
@@ -7,6 +11,7 @@
   color: rgb(255, 255, 255);
   box-shadow: 8px 7px 21px -5px #e7f1ff;
 
+
 }
 
 
@@ -15,6 +20,7 @@
   height: 26rem;
   margin: 6px;
   overflow: hidden;
+
 }
 
 .description {

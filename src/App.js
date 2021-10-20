@@ -36,19 +36,15 @@ function App() {
             <PrivateRoute path="/donate">
               <Donate></Donate>
             </PrivateRoute>
-
             <PrivateRoute path="/book">
               <Book></Book>
             </PrivateRoute>
-
             <Route path="/signup">
               <Signup></Signup>
             </Route>
-
-            <Route path="/services/:id">
+            <PrivateRoute path="/services/:id">
               <Details></Details>
-            </Route>
-
+            </PrivateRoute>
             <Route path="*">
               <Error></Error>
             </Route>

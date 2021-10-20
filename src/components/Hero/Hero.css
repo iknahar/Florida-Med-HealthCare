@@ -16,3 +16,14 @@
       width: 50vw;
   }
 }
+
+.logoutButton{
+  outline: none;
+  border: none;
+  margin-left: 10px;
+  margin-top: -5px;
+  padding: 5px 20px;
+  background-color: rgb(255, 43, 43);
+  color: aliceblue;
+  border-radius: 5px;
+}

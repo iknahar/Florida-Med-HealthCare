@@ -10,6 +10,7 @@ import {
 import { useState } from "react";
 import firebaseInitialization from "../../firebase/firebase.init";
 import './Signup.css'
+import { useHistory } from "react-router";
 
 firebaseInitialization()
 const googleProvider = new GoogleAuthProvider();
@@ -161,7 +162,10 @@ function Signup() {
           </div>
         </div>
         <div className="row mb-3 text-danger">{error}</div>
-        <button type="submit" className="btnHero">
+        <button
+           type="submit"
+          className="btnHero"
+        >
           {isLogin ? "Login" : "Register"}
         </button>
       </form>
@@ -169,6 +173,7 @@ function Signup() {
       <div>--------------------------------</div>
       <br />
       <button
+
         className="pt-2 pb-2 ps-5 pe-5 mb-5 rounded-pill"
         onClick={handleGoogleSignIn}
       >
